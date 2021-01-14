@@ -147,6 +147,5 @@ body {
 }
 
 .div_section_1_h2{
-    width: 485px;
-    height: 92px;
+    border-left: 12px solid #f16d7f;
 }
