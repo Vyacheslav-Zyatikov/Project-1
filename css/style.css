@@ -490,3 +490,31 @@ body {
     position: relative;
     height: 665px;
 }
+
+.section-subscrube {
+    background-image:url(/image/subscrube.jpg);
+    height: 438px;
+}
+
+
+.container-section-subscrube {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.subscrube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    border-left: 1px solid #fff;
+    height: 438px;
+}
+
+.slider-reviews {
+    display: flex;
+    width: 49%;
+}
