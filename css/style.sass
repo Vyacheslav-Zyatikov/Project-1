@@ -1,1144 +1,1399 @@
-body 
-    max-width: 1600px
-    font-family: 'Lato', sans-serif
+body
+  max-width: 1600px
+  font-family: 'Lato', sans-serif
 
+.max-width
+  width: 1140px
+  margin: 0 auto
 
-.padding-site
-    padding-left: 230px
-    padding-right: 230px
+.transition-all
+  transition: all 0.3s
 
-
-.max-width 
-    width: 1140px
-    margin: 0 auto
-
-
-.container-header 
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    align-items: center
+.container-header
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: center
 
 .container-section-product
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
-    align-items: center
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  align-items: center
 
-.container 
-    display: flex
-    justify-content: space-around
-    flex-wrap: wrap
-    align-items: center
+.container
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  align-items: center
 
+.container-header-down
+  display: flex
+  justify-content: space-around
+  flex-flow: column wrap
+  align-items: center
 
-.header 
-    background-color: #ffffff
+.header
+  background-color: #ffffff
 
+.header-left
+  display: flex
+  justify-content: flex-start
+  align-items: center
 
-.header-left 
-    display: flex
-    justify-content: flex-start
-    align-items: center
+.logo
+  display: flex
+  justify-content: space-between
+  align-items: center
+  text-decoration: none
 
+.logo-h2
+  font-size: 27px
+  line-height: 51px
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #222222
+  padding-left: 13px
+  padding-right: 37px
 
-.logo 
-    display: flex
-    justify-content: space-between
-    align-items: center
+.logo-end
+  font-size: 27px
+  line-height: 51px
+  font-weight: 900
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #f16d7f
 
-.logo-h2 
-    font-size: 27px
-    line-height: 32px
-    font-weight: 300
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #222222
-    padding-left: 13px
-    padding-right: 37px
+.browse
+  width: 87px
+  height: 40px
+  background-color: #cdcdcc
+  background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%)
+  border: 1px solid #e6e6e6
+  border-radius: 3px 0 0 3px
+  font-size: 14px
+  line-height: 38px
+  letter-spacing: 0.025em
+  color: #222222
+  align-items: center
 
+.caret-down
+  font-size: 14px
+  line-height: 32px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #838383
 
-.logo-end 
-    font-size: 27px
-    line-height: 32px
-    font-weight: 900
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #f16d7f
+.search
+  width: 317px
+  height: 36px
+  background-color: #ffffff
+  border: 1px solid #e6e6e6
 
-.browse 
-    width: 87px
-    height: 38px
-    background-color: #cdcdcc
-    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%)
-    border: 1px solid #e6e6e6
-    border-radius: 3px 0 0 3px
-    padding-left: 15px
-    justify-content: center
+.search[placeholder]
+  padding-left: 16px
 
+.search-button
+  width: 38px
+  height: 40px
+  padding: 0
+  border-radius: 0 3px 3px 0
+  border: 1px solid #e6e6e6
+  background-color: #fff
 
-.browse-p 
-    font-size: 14px
-    line-height: 40px
-    letter-spacing: 0.025em
-    color: #222222
-
-
-.caret-down 
-    font-size: 14px
-    line-height: 32px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #838383
-
-
-.search 
-    width: 317px
-    height: 36px
-    background-color: #ffffff
-    border: 1px solid #e6e6e6
-
-
-.search[placeholder] 
-    padding-left: 16px
-
-
-.search-button 
-    width: 38px
-    height: 40px
-    padding: 0
-    border-radius: 0 3px 3px 0
-    border: 1px solid #e6e6e6
-    background-color: #fff
+.search-button:hover > .fa-search
+  color: #f16d7f
 
 
-.main-nav 
-    display: flex
-    justify-content: space-around
-    flex-wrap: wrap
-    align-items: center
-    height: 51px
-    position: relative
+.main-nav
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  align-items: center
+  height: 51px
 
+.nav-item
+  display: inline-flex
+  justify-content: space-around
+  flex-wrap: nowrap
+  align-items: center
+  position: relative
 
-.nav-item 
-    display: inline-flex
-    justify-content: space-around
-    flex-wrap: nowrap
-    align-items: center
+.nav-item:hover > .mega-box
+  display: flex
 
+.browse:active > .drop-down
+  display: flex
 
-.main-nav:hover > .mega-box 
-    display: flex
+.drop-down:hover
+  display: flex
 
+.cart-hover:hover > .cart-box
+  display: flex
 
-.browse:hover > .drop-down 
-    display: flex
+.nav-link
+  font-size: 14px
+  line-height: 26px
+  font-weight: 700
+  text-transform: uppercase
+  color: #222222
+  text-decoration: none
+  padding: 10px 19px
 
+.section_slider
+  background-color: #e8e8e8
+  background-image: url(../image/section1.jpg)
 
-.cart-hover:hover > .cart-box 
-    display: flex
+.section_slider_h2
+  font-size: 60px
+  font-weight: 900
+  letter-spacing: 0.025em
+  color: #222222
+  line-height: 0.8
+  width: 500px
 
+.section_slider_h2_S1
+  font-size: 40px
+  font-weight: 900
+  letter-spacing: 0.025em
+  color: #222222
 
-.nav-link 
-    font-size: 14px
-    line-height: 26px
-    font-weight: 700
-    text-transform: uppercase
-    color: #222222
-    text-decoration: none
-    padding: 10px 19px
+.section_slider_h2_S2
+  font-size: 40px
+  font-weight: 900
+  letter-spacing: 0.025em
+  color: #f16d7f
 
-
-.section_slider 
-    background-color: #e8e8e8
-    background-image: url(../image/section1.jpg)
-
-
-.section_slider_h2 
-    font-size: 60px
-    font-weight: 900
-    letter-spacing: 0.025em
-    color: #222222
-    line-height: 0.8
-    width: 500px
-
-
-.section_slider_h2_S1 
-    font-size: 40px
-    font-weight: 900
-    letter-spacing: 0.025em
-    color: #222222
-
-
-.section_slider_h2_S2 
-    font-size: 40px
-    font-weight: 900
-    letter-spacing: 0.025em
-    color: #f16d7f
-
-
-.div_section_slider_h2 
-    position: absolute
-    top: 224px
-    padding-left: 12px
-    border-left: 12px solid #f16d7f
-
+.div_section_slider_h2
+  position: absolute
+  top: 224px
+  padding-left: 12px
+  border-left: 12px solid #f16d7f
 
 .banner-a
-    position: relative
-    padding-bottom: 20px
+  position: relative
+  margin-bottom: 20px
 
+.banner-a:hover
+  transform: scale(1.05, 1.05)
+  box-shadow: 0 0 5px 1px #f16d7f
 
-.badge-p 
-    font-size: 18px
-    line-height: 1.2
-    font-weight: 900
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #222222
-
+.badge-p
+  font-size: 18px
+  line-height: 1.2
+  font-weight: 900
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #222222
 
 .banner-right
-    width: 49%
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-wrap: wrap
-    padding-left: 10px
-
+  width: 49%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  padding-left: 10px
 
 .banner-left
-    width: 49%
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-wrap: wrap
-    padding-right: 10px
-
+  width: 49%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  padding-right: 10px
 
 .banner
-    padding-top: 98px
+  padding-top: 98px
 
+.badge-s
+  font-size: 30px
+  color: #f16d7f
 
-.badge-s 
-    font-size: 30px
-    color: #f16d7f
+.div-badge
+  background-color: #ffffff
+  position: absolute
+  top: 26px
 
+.browse-p .fa-caret-down
+  font-size: 14px
+  line-height: 40px
+  letter-spacing: 0.025em
+  color: #838383
+  padding-left: 6px
 
-.div-badge 
-    background-color: #ffffff
-    position: absolute
-    top: 26px
+.fa-search
+  font-size: 14px
+  line-height: 32px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #a4a4a4
 
+.header-right
+  display: flex
+  position: relative
+  justify-content: flex-end
+  align-items: center
 
-.browse-p .fa-caret-down 
-    font-size: 14px
-    line-height: 40px
-    letter-spacing: 0.025em
-    color: #838383
-    padding-left: 6px
+.header-right-button
+  width: 130px
+  height: 38px
+  background-color: #f16d7f
+  margin-left: 26px
+  font-size: 15px
+  line-height: 32px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #ffffff
+  border: transparent
 
+.header-right-button:hover
+  color: #f16d7f
+  background-color: #ffffff
+  border: 1px solid #f16d7f
 
-.fa-search 
-    font-size: 14px
-    line-height: 32px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #a4a4a4
+.header-right-button .fa-caret-down
+  font-size: 14px
+  line-height: 32px
+  letter-spacing: 0.025em
+  color: #ffffff
+  padding-left: 6px
 
+.header-right-button:hover .fa-caret-down
+  color: #f16d7f
 
-.header-right 
-    display: flex
-    position: relative
-    justify-content: flex-end
-    align-items: center
-
-
-.header-right-button 
-    width: 130px
-    height: 38px
-    background-color: #f16d7f
-    margin-left: 26px
-    font-size: 15px
-    line-height: 32px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #ffffff
-    border: transparent
-
-.header-right-button .fa-caret-down 
-    font-size: 14px
-    line-height: 32px
-    letter-spacing: 0.025em
-    color: #ffffff
-    padding-left: 6px
-
-
-.product-link 
-    display: block
-    width: 263px
-    height: 364px
-    text-decoration: none
-    position: relative
-
-
-
-
-.product-item 
-    width: 263px
-    height: 364px
-    display: flex
-    justify-content: center
-    margin-bottom: 40px
-    position: relative
-
-
-.product-item:hover 
-    background-color: #ffffff
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.15)
-
-
-.product-item:hover > .add-box 
-    display: flex
-
-
-.product-box 
-    margin-top: 60px
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-
-
-.ymla-box 
-    margin: 72px 0
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    width: 100%
-
-
-.prod-desc 
-    font-size: 13px
-    line-height: 1.2
-    font-weight: 400
-    text-transform: uppercase
-    color: #222222
-    padding-bottom: 17px
-    padding-top: 19px
-
-
-.prod-price 
-    font-size: 16px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: #f16d7f
-
-
-.text-box 
-    padding-left: 13px
-
-
-.prod-img 
-    width: 100%
-
-
-.product-h3-p 
-    width: 100%
-
-
-.section-product-h3 
-    font-size: 30px
-    line-height: 30px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #222222
-    width: 100%
-    text-align: center
-    margin-top: 79px
-
-
-.section-product-p 
-    font-size: 14px
-    line-height: 14px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #9f9f9f
-    width: 100%
-    text-align: center
-    margin-top: 15px
-
-
-.add 
-    display: flex
-    text-decoration: none
-    width: 100%
-    padding: 10px 12px
-    align-items: center
-
-
-.product-link:hover > .img-box 
+.product-link
+  display: block
+  width: 263px
+  height: 364px
+  text-decoration: none
+  position: relative
+  &:hover > .img-box
     filter: brightness(50%)
 
-
-.ymla-link:hover > .img-box 
+.product-link__like-also:hover > .img-box
     filter: none
 
-
-.add-box 
-    position: absolute
-    border: 1px solid #ffffff
-    display: none
-    top: 97px
-
-
-
-
-
-
-
-
-.add-img 
-    width: 23px
-    height: 22px
-    filter: invert(100%)
-
-
-.add-p 
-    font-size: 13px
-    line-height: 1.2
-    font-weight: 700
-    color: #ffffff
-    padding-left: 8px
-
-
-.browse-all-button 
-    width: 212px
-    height: 48px
-    background-color: #f16d7f
-    align-items: center
-    padding: 0
-    border: transparent
-
-
-.browse-all-button-p 
-    font-size: 16px
-    line-height: 47px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #ffffff
-    width: 100%
-
-.container-feature 
-    margin-top: 113px
-    margin-bottom: 97px
-    height: 529px
-    background-color: #222224
-    flex-wrap: nowrap
-    position: relative
-
-.container-feature-badge 
-    position: absolute
-    font-size: 54px
-    line-height: 0.7
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #ffffff
-    width: 300px
-    height: 78px
-
-
-.cont-feat-badge-s1 
-    font-size: 54px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #f16d7f
-
-
-.cont-feat-badge-s2 
-    font-size: 32px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #ffffff
-
-
-.div-container-feature-badge 
-    position: absolute
-    left: 39px
-    top: 146px
-    width: 300px
-    height: 78px
-
-
-.article-box 
-    display: flex
-    flex-wrap: wrap
-    height: 100%
-    align-items: center
-    padding-top: 48px
-
-
-.article-box-items 
-    height: 30%
-    display: flex
-    flex-wrap: nowrap
-
-
-.article-box-items-h3 
-    font-size: 20px
-    line-height: 1.2
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #fbfbfb
-
-
-.article-box-items-p 
-    font-size: 14px
-    line-height: 24px
-    font-weight: 300
-    letter-spacing: 0.025em
-    color: #fbfbfb
-    padding-top: 17px
-    padding-right: 43px
-    word-break: break-all
-
-
-.article-box-items-img 
-    width: 45px
-    height: 32px
-    padding-left: 36px
-    padding-right: 33px
-
-
-.container_slider 
-    position: relative
-    height: 665px
-
-
-.section-subscrube 
-    height: 438px
-
-
-.section-subscrube 
-    background-image: url("../image/subscrube.jpg")
-
-.container-section-subscrube 
-    display: flex
-    justify-content: center
-    flex-wrap: nowrap
-    align-items: center
-    height: 438px
-
-.subscrube 
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    align-items: center
-    width: 50%
-    border-left: 1px solid #fff
-    height: 438px
-
-.slider-reviews 
-    display: flex
-    width: 50%
-    height: 438px
-
-.subscrube-h3 
-    font-size: 14px
-    line-height: 24px
-    font-weight: 400
-    text-transform: none
-    letter-spacing: 0.025em
-    color: #222224
-
-.subscrube-h3-s 
-    font-size: 24px
-    line-height: 24px
-    font-weight: 400
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #222224
-
-.div-subscrube-h3 
-    display: flex
-    text-align: center
-    align-items: flex-end
-    height: 50%
-
-.subscrube-input 
-    width: 282px
-    height: 46px
-    background-color: #e1e1e1
-    border-radius: 23px 0 0 23px
-    padding: 0
-    border: 0
-
-.subscrube-input[placeholder] 
-    opacity: 0.67
-    font-family: Lato, serif
-    font-size: 14px
-    line-height: 54px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #222224
-    padding-left: 38px
-
-.div-subscrube-input 
-    display: flex
-    align-items: flex-start
-    height: 50%
-    margin-top: 35px
-
-.subscrube-submit 
-    width: 104px
-    height: 46px
-    background-color: #f16d7f
-    border-radius: 0 23px 23px 0
-    padding: 0
-    border: 0
-
-.subscrube-submit:hover
+.product-item
+  width: 263px
+  height: 364px
+  display: flex
+  justify-content: center
+  margin-bottom: 40px
+  position: relative
+  &:hover
     background-color: #ffffff
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.15)
+  &:hover > .add-box
+    display: flex
 
-.subscrube-submit[type] 
-    font-size: 14px
-    line-height: 14px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #ffffff
+.product-box
+  margin-top: 60px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
 
-.subscrube-submit[type]:hover
-    color: #f16d7f
+.prod-desc
+  font-size: 13px
+  line-height: 1.2
+  font-weight: 400
+  text-transform: uppercase
+  color: #222222
+  padding-bottom: 17px
+  padding-top: 19px
 
-.slider-nav 
-    width: 38px
-    height: 4px
-    background-color: #d6d6d6
-    z-index: 10
-    margin: 5px 6px
-    outline: 2px solid #d6d6d6
-    outline-offset: -2px
-    cursor: pointer
+.prod-price
+  font-size: 16px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  color: #f16d7f
+
+.text-box
+  padding-left: 13px
+
+.prod-img
+  width: 100%
+
+.product-h3-p
+  width: 100%
+
+.section-product-h3
+  font-size: 30px
+  line-height: 30px
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #222222
+  width: 100%
+  text-align: center
+  margin-top: 79px
+
+.section-product-p
+  font-size: 14px
+  line-height: 14px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #9f9f9f
+  width: 100%
+  text-align: center
+  margin-top: 15px
+
+.add
+  display: flex
+  text-decoration: none
+  width: 100%
+  padding: 10px 12px
+  align-items: center
+
+.img-box
+  position: relative
+
+.add-box
+  position: absolute
+  border: 1px solid #ffffff
+  display: none
+  top: 97px
+  z-index: 1
+
+  &:hover
+    box-shadow: 0 0 5px 1px #f16d7f
+    display: flex
+
+  &:hover + .product-link > .img-box
+    filter: brightness(50%)
+
+.add-img
+  width: 23px
+  height: 22px
+  filter: invert(100%)
+
+.add-p
+  font-size: 13px
+  line-height: 1.2
+  font-weight: 700
+  color: #ffffff
+  padding-left: 8px
+
+.browse-all-button
+  width: 212px
+  height: 48px
+  background-color: #f16d7f
+  align-items: center
+  padding: 0
+  border: transparent
+
+.browse-all-button:hover
+  background-color: #ffffff
+  border: 1px solid #f16d7f
+
+.browse-all-button-p
+  font-size: 16px
+  line-height: 47px
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #ffffff
+  width: 100%
+
+.browse-all-button:hover > .browse-all-button-p
+  color: #f16d7f
+
+.container-feature
+  margin-top: 113px
+  margin-bottom: 97px
+  height: 529px
+  background-color: #222224
+  flex-wrap: nowrap
+  position: relative
+
+.container-feature-badge
+  position: absolute
+  font-size: 54px
+  line-height: 0.7
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #ffffff
+  width: 300px
+  height: 78px
+
+.cont-feat-badge-s1
+  font-size: 54px
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #f16d7f
+
+.cont-feat-badge-s2
+  font-size: 32px
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #ffffff
+
+.div-container-feature-badge
+  position: absolute
+  left: 39px
+  top: 146px
+  width: 300px
+  height: 78px
+
+.article-box
+  display: flex
+  flex-wrap: wrap
+  height: 100%
+  align-items: center
+  padding-top: 48px
+
+.article-box-items
+  height: 30%
+  display: flex
+  flex-wrap: nowrap
+
+.article-box-items-h3
+  font-size: 20px
+  line-height: 1.2
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #fbfbfb
+
+.article-box-items-p
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  letter-spacing: 0.025em
+  color: #fbfbfb
+  padding-top: 17px
+  padding-right: 43px
+  word-break: break-all
+
+.article-box-items-img
+  width: 45px
+  height: 32px
+  padding-left: 36px
+  padding-right: 33px
+
+.container_slider
+  position: relative
+  height: 665px
+
+.section-subscrube
+  height: 438px
+
+.section-subscrube
+  background-image: url("../image/subscrube.jpg")
+
+.container-section-subscrube
+  display: flex
+  justify-content: center
+  flex-wrap: nowrap
+  align-items: center
+  height: 438px
+
+.subscrube
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  width: 50%
+  border-left: 1px solid #fff
+  height: 438px
+
+.slider-reviews
+  display: flex
+  width: 50%
+  height: 438px
+
+.subscrube-h3
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  text-transform: none
+  letter-spacing: 0.025em
+  color: #222224
+
+.subscrube-h3-s
+  font-size: 24px
+  line-height: 24px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #222224
+
+.div-subscrube-h3
+  display: flex
+  text-align: center
+  align-items: flex-end
+  height: 50%
+
+.subscrube-input
+  width: 282px
+  height: 46px
+  background-color: #e1e1e1
+  border-radius: 23px 0 0 23px
+  padding: 0
+  border: 0
+
+.subscrube-input[placeholder]
+  opacity: 0.67
+  font-family: Lato, serif
+  font-size: 14px
+  line-height: 54px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #222224
+  padding-left: 38px
+
+.div-subscrube-input
+  display: flex
+  align-items: flex-start
+  height: 50%
+  margin-top: 35px
+
+.subscrube-submit
+  width: 104px
+  height: 46px
+  background-color: #f16d7f
+  border-radius: 0 23px 23px 0
+  padding: 0
+  border: 0
+
+.subscrube-submit:active
+  background-color: #ffffff
+
+.subscrube-submit[type]
+  font-size: 14px
+  line-height: 14px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #ffffff
+
+.subscrube-submit[type]:active
+  color: #f16d7f
+
+.slider-nav
+  width: 38px
+  height: 4px
+  background-color: #d6d6d6
+  z-index: 10
+  margin: 5px 6px
+  outline: 2px solid #d6d6d6
+  outline-offset: -2px
+  cursor: pointer
 
 .slider-nav[checked],
 .slider-nav:hover
-    background-color: #f16d7f
-    outline: 2px solid #f16d7f
-    outline-offset: -2px
+  background-color: #f16d7f
+  outline: 2px solid #f16d7f
+  outline-offset: -2px
 
-.slider 
-    display: flex
-    justify-content: center
-    position: relative
-    overflow: hidden
+.slider
+  display: flex
+  justify-content: center
+  position: relative
+  overflow: hidden
 
-.slider-contents 
-    display: flex
-    justify-content: flex-start
-    flex-wrap: nowrap
-    height: 180px
-    width: 100%
-    position: relative
+.slider-contents
+  display: flex
+  justify-content: flex-start
+  flex-wrap: nowrap
+  height: 180px
+  width: 100%
+  position: relative
 
-.slider-inner 
-    position: relative
-    display: flex
-    flex-flow: row nowrap
-    justify-content: center
-    align-items: center
+.slider-inner
+  position: relative
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
 
-.slider-img 
-    height: 100%
+.slider-img
+  height: 100%
 
-.slider-caption 
-    font-size: 12px
-    line-height: 14px
-    font-weight: 300
-    letter-spacing: 0.025em
-    color: #222224
+.slider-caption
+  font-size: 12px
+  line-height: 14px
+  font-weight: 300
+  letter-spacing: 0.025em
+  color: #222224
 
-.slider-caption-s 
-    font-size: 16px
-    line-height: 16px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #f16d7f
+.slider-caption-s
+  font-size: 16px
+  line-height: 16px
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #f16d7f
 
-.slider-text 
-    display: flex
-    justify-content: flex-start
-    flex-wrap: wrap
-    width: 100%
-    padding: 4px 72px 12px 24px
+.slider-text
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  width: 100%
+  padding: 4px 72px 12px 24px
 
-.slider-txt 
-    font-size: 16px
-    line-height: 26px
-    font-weight: 400
-    font-style: italic
-    letter-spacing: 0.025em
-    color: #222224
-    text-align: inherit
+.slider-txt
+  font-size: 16px
+  line-height: 26px
+  font-weight: 400
+  font-style: italic
+  letter-spacing: 0.025em
+  color: #222224
+  text-align: inherit
 
-.div-slider-nav 
-    display: flex
-    justify-content: center
-    position: absolute
-    bottom: -10px
-    left: 100px
+.div-slider-nav
+  display: flex
+  justify-content: center
+  position: absolute
+  bottom: -10px
+  left: 100px
 
-.linkedin-icon 
-    width: 32px
-    height: 32px
-    background-color: #ffffff
-    display: flex
-    align-items: center
-    justify-content: center
+.linkedin-icon
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  display: flex
+  align-items: center
+  justify-content: center
 
 .footer-icon
-    width: 32px
-    height: 32px
-    background-color: #ffffff
-    display: flex
-    align-items: center
-    justify-content: center
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  display: flex
+  align-items: center
+  justify-content: center
 
 .footer-icon:hover
-    background-color: #f16d7f
+  background-color: #f16d7f
 
 .footer-icon:hover i
-    color: #ffffff
+  color: #ffffff
 
 .footer-icon:active
-    opacity: 0.29
-    background-color: #ffffff
+  opacity: 0.29
+  background-color: #ffffff
 
 .footer-icon:active i
-    opacity: 0.8
-    color: #b2b2b2
+  opacity: 0.8
+  color: #b2b2b2
 
-.fa-google-plus-g 
-    font-size: 16px
-    line-height: 16px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #b2b2b2
+.fa-google-plus-g
+  font-size: 16px
+  line-height: 16px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #b2b2b2
 
-.fa-pinterest-p 
-    font-size: 16px
-    line-height: 42px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #b2b2b2
+.fa-pinterest-p
+  font-size: 16px
+  line-height: 42px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #b2b2b2
 
 .fa-linkedin-in
-    font-size: 16px
-    line-height: 42px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #b2b2b2
+  font-size: 16px
+  line-height: 42px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #b2b2b2
 
-.fa-twitter 
-    font-size: 16px
-    line-height: 42px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #b2b2b2
+.fa-twitter
+  font-size: 16px
+  line-height: 42px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #b2b2b2
 
-.fa-facebook 
-    font-size: 16px
-    line-height: 42px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #b2b2b2
+.fa-facebook
+  font-size: 16px
+  line-height: 42px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #b2b2b2
 
-.div-icon 
-    display: flex
-    justify-content: space-around
-    align-items: center
-    flex-wrap: nowrap
-    width: 191px
+.div-icon
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: nowrap
+  width: 191px
 
-.footer-container-down 
-    display: flex
-    align-items: center
-    justify-content: space-between
-    height: 79px
-    background-color: #e6e6e6
+.footer-container-down
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 79px
+  background-color: #e6e6e6
 
-.icon-a 
-    width: 100%
-    height: 100%
-    text-decoration: none
+.icon-a
+  width: 100%
+  height: 100%
+  text-decoration: none
 
-.footer-container-up 
-    display: flex
-    align-items: center
-    justify-content: space-around
-    height: 458px
+.footer-container-up
+  display: flex
+  align-items: center
+  justify-content: space-around
+  height: 458px
 
-.logo-footer 
-    width: 165px
-    height: 51px
+.logo-footer
+  width: 165px
+  height: 51px
 
-.div-footer-container-down 
-    background-color: #e6e6e6
+.div-footer-container-down
+  background-color: #e6e6e6
 
-.logo-footer-div-p 
-    width: 427px
-    height: 190px
-    overflow: hidden
-    margin-top: 29px
+.logo-footer-div-p
+  width: 427px
+  height: 190px
+  overflow: hidden
+  margin-top: 29px
 
-.logo-footer-p 
-    font-size: 14px
-    line-height: 24px
-    font-weight: 300
-    letter-spacing: 0.025em
-    color: #898989
+.logo-footer-p
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  letter-spacing: 0.025em
+  color: #898989
 
-.footer-h2 
-    font-size: 18px
-    line-height: 26px
-    font-weight: 700
-    letter-spacing: 0.025em
-    color: #f16d7f
-    padding-bottom: 25px
-    padding-top: 20px
+.footer-h2
+  font-size: 18px
+  line-height: 26px
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #f16d7f
+  padding-bottom: 25px
+  padding-top: 20px
 
-.footer-a 
-    font-size: 16px
-    line-height: 42px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #898989
-    text-decoration: none
+.footer-a
+  font-size: 16px
+  line-height: 42px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #898989
+  text-decoration: none
+  display: block
 
 .footer-a:hover
-    color: #f16d7f
+  color: #f16d7f
 
-.footer-container-down-p 
-    font-size: 16px
-    line-height: 42px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #7a7a7a
+.footer-container-down-p
+  font-size: 16px
+  line-height: 42px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #7a7a7a
 
-.mega-hading 
-    font-size: 14px
-    line-height: 32px
-    font-weight: 400
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #232323
-    border-bottom: 1px solid #e8e8e8
-    width: 235px
-    padding: 8px
+.mega-hading
+  font-size: 14px
+  line-height: 32px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #232323
+  border-bottom: 1px solid #e8e8e8
+  width: 219px
+  padding: 8px
 
-.mega-link 
-    font-size: 14px
-    line-height: 28px
-    font-weight: 400
-    letter-spacing: 0.025em
-    color: #646464
-    text-decoration: none
-    display: block
-    width: 100%
+.mega-link
+  font-size: 14px
+  line-height: 28px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #646464
+  text-decoration: none
+  display: block
+  width: 100%
 
-.mega-link:hover 
-    color: #f16d7f
+.mega-link:hover
+  color: #f16d7f
 
-.mega-item-box 
-    margin-right: 45px
+.mega-item-box
+  margin-right: 45px
 
-.mega-item-box:last-of-type 
-    margin-right: 0
+.mega-item-box:last-of-type
+  margin-right: 0
 
-.mega-box 
-    display: none
-    position: absolute
-    top: 40px
-    z-index: 1
-    padding: 20px
-    background-color: #fff
-    border-radius: 5px
-    border: 1px solid #e8e8e8
-    flex-flow: column wrap
-    max-height: 310px
-    width: 846px
+.mega-box
+  display: none
+  position: absolute
+  top: 40px
+  z-index: 1
+  padding: 20px
+  background-color: #fff
+  border-radius: 5px
+  border: 1px solid #e8e8e8
+  flex-flow: column wrap
+  max-height: 310px
+  width: 846px
 
-.drop-down 
-    display: none
-    position: absolute
-    top: 68px
-    z-index: 999
-    padding: 20px
-    background-color: #fff
-    border-radius: 5px
-    border: 1px solid #e8e8e8
-    align-items: flex-start
-    flex-wrap: wrap
-    max-width: 251px
+  &__home
+    left: -26px
 
-.cart-box 
-    display: none
-    position: absolute
-    top: 40px
-    left: 0
-    z-index: 999
-    padding: 20px
-    background-color: #fff
-    border-radius: 5px
-    border: 1px solid #e8e8e8
-    align-items: flex-start
-    flex-wrap: wrap
-    max-width: 270px
-    justify-content: center
+  &__man
+    left: -30px
 
-.mega-box:before 
-    content: ""
-    display: block
-    width: 12px
-    height: 12px
-    border-left: 1px solid #e8e8e8
-    border-top: 1px solid #e8e8e8
-    position: absolute
-    top: -7px
-    left: 60px
-    transform: rotate(45deg)
-    background-color: #fff
+  &__women
+    left: -17px
 
-.drop-down:before 
-    content: ""
-    display: block
-    width: 12px
-    height: 12px
-    border-left: 1px solid #e8e8e8
-    border-top: 1px solid #e8e8e8
-    position: absolute
-    top: -7px
-    left: 55px
-    transform: rotate(45deg)
-    background-color: #fff
+  &__kids
+    left: -34px
 
-.cart-box:before 
-    content: ""
-    display: block
-    width: 12px
-    height: 12px
-    border-left: 1px solid #e8e8e8
-    border-top: 1px solid #e8e8e8
-    position: absolute
-    top: -7px
-    left: 13px
-    transform: rotate(45deg)
-    background-color: #fff
+  &__accoseriese
+    left: -104px
 
-.cart-box-item 
-    display: flex
-    justify-content: space-between
-    align-items: center
-    flex-wrap: nowrap
-    width: 229px
-    border-bottom: 1px solid rgba(237, 237, 237, 0.74)
-    padding: 16px 0
+  &__accoseriese:before
+    left: 166px !important
 
-.cart-box-product-price 
-    font-size: 12px
-    line-height: 1.2
-    font-weight: 400
-    text-transform: uppercase
-    color: #f16d7f
+  &__featured
+    left: -234px
 
-.cart-box-product-x 
-    font-size: 10px
-    line-height: 1.2
-    font-weight: 400
-    text-transform: uppercase
-    color: #f16d7f
+  &__featured:before
+    left: 278px !important
 
-.cart-box-product-quantity 
-    font-size: 12px
-    line-height: 1.2
-    font-weight: 400
-    text-transform: uppercase
-    color: #f16d7f
+  &__hot-deals
+    left: -343px
 
-.cart-box-product-rate 
-    font-size: 12px
-    line-height: 1.2
-    font-weight: 400
-    text-transform: uppercase
-    color: #e4af48
-    width: 100%
-    padding-bottom: 12px
+  &__hot-deals:before
+    left: 390px !important
 
-.cart-box-product-name 
-    font-size: 12px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: #222222
-    width: 100%
-    padding-bottom: 10px
+.mega-box:before
+  content: ""
+  display: block
+  width: 12px
+  height: 12px
+  border-left: 1px solid #e8e8e8
+  border-top: 1px solid #e8e8e8
+  position: absolute
+  top: -7px
+  left: 60px
+  transform: rotate(45deg)
+  background-color: #fff
 
-.cart-box-product-qp 
-    display: flex
-    flex-wrap: nowrap
-    align-items: baseline
-    width: 100%
+.drop-down
+  display: none
+  position: absolute
+  top: 66px
+  z-index: 999
+  padding: 20px
+  background-color: #fff
+  border-radius: 5px
+  border: 1px solid #e8e8e8
+  align-items: flex-start
+  flex-wrap: wrap
+  max-width: 251px
 
-.cart-box-product 
-    display: flex
-    align-items: stretch
-    flex-wrap: wrap
-    padding: 0 14px
+.cart-box
+  display: none
+  position: absolute
+  top: 40px
+  left: 0
+  z-index: 999
+  padding: 20px
+  background-color: #fff
+  border-radius: 5px
+  border: 1px solid #e8e8e8
+  align-items: flex-start
+  flex-wrap: wrap
+  max-width: 270px
+  justify-content: center
 
-.cart-box-del-but 
-    height: 100%
-    border: 0
-    padding: 5px
-    background-color: #fff
 
-.cart-box-total 
-    font-size: 16px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: #222222
+.drop-down:before
+  content: ""
+  display: block
+  width: 12px
+  height: 12px
+  border-left: 1px solid #e8e8e8
+  border-top: 1px solid #e8e8e8
+  position: absolute
+  top: -7px
+  left: 55px
+  transform: rotate(45deg)
+  background-color: #fff
 
-.cart-box-total-price 
-    font-size: 16px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: #222222
+.cart-box:before
+  content: ""
+  display: block
+  width: 12px
+  height: 12px
+  border-left: 1px solid #e8e8e8
+  border-top: 1px solid #e8e8e8
+  position: absolute
+  top: -7px
+  left: 13px
+  transform: rotate(45deg)
+  background-color: #fff
 
-.cart-box-total-box 
-    display: flex
-    justify-content: space-between
-    width: 100%
-    margin-top: 19px
-    margin-bottom: 32px
+.cart-box-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: nowrap
+  width: 229px
+  border-bottom: 1px solid rgba(237, 237, 237, 0.74)
+  padding: 16px 0
 
-.cart-box-item-box 
-    width: 100%
+.cart-box-product-price
+  font-size: 12px
+  line-height: 1.2
+  font-weight: 400
+  text-transform: uppercase
+  color: #f16d7f
+
+.cart-box-product-x
+  font-size: 10px
+  line-height: 1.2
+  font-weight: 400
+  text-transform: uppercase
+  color: #f16d7f
+
+.cart-box-product-quantity
+  font-size: 12px
+  line-height: 1.2
+  font-weight: 400
+  text-transform: uppercase
+  color: #f16d7f
+
+.cart-box-product-rate
+  font-size: 12px
+  line-height: 1.2
+  font-weight: 400
+  text-transform: uppercase
+  color: #e4af48
+  width: 100%
+  padding-bottom: 12px
+
+.cart-box-product-name
+  font-size: 12px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  color: #222222
+  width: 100%
+  padding-bottom: 10px
+
+.cart-box-product-qp
+  display: flex
+  flex-wrap: nowrap
+  align-items: baseline
+  width: 100%
+
+.cart-box-product
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  padding: 0 14px
+
+.cart-box-del-but
+  height: 100%
+  border: 0
+  padding: 5px
+  background-color: #fff
+
+.fa-times-circle:hover
+  color: #f16d7f
+
+.cart-box-total
+  font-size: 16px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  color: #222222
+
+.cart-box-total-price
+  font-size: 16px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  color: #222222
+
+.cart-box-total-box
+  display: flex
+  justify-content: space-between
+  width: 100%
+  margin-top: 19px
+  margin-bottom: 32px
+
+.cart-box-item-box
+  width: 100%
 
 .cart-box-go-cart
-    font-size: 14px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: #4a4a4a
-    width: 100%
-    height: 50px
-    background-color: #fff
-    border: 1px solid #eaeaea
+  font-size: 14px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  color: #4a4a4a
+  width: 100%
+  height: 50px
+  background-color: #fff
+  border: 1px solid #eaeaea
 
 .cart-box-go-cart:hover
-    color: #f16d7f
-    border: 1px solid #f16d7f
+  color: #f16d7f
+  border: 1px solid #f16d7f
 
-.cart-box-checkout 
-    font-size: 14px
-    line-height: 1.2
-    font-weight: 700
-    text-transform: uppercase
-    color: #4a4a4a
-    width: 100%
-    height: 50px
-    background-color: #fff
-    border: 1px solid #eaeaea
-    margin-bottom: 11px
+.cart-box-checkout
+  font-size: 14px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  color: #4a4a4a
+  width: 100%
+  height: 50px
+  background-color: #fff
+  border: 1px solid #eaeaea
+  margin-bottom: 11px
 
-.cart-box-checkout:hover 
-    color: #f16d7f
-    border: 1px solid #f16d7f
+.cart-box-checkout:hover
+  color: #f16d7f
+  border: 1px solid #f16d7f
 
-.mega-item-div-promo-p 
-    position: absolute
-    top: 61px
-    left: 174px
+.mega-item-div-promo-p
+  position: absolute
+  top: 61px
+  left: 174px
 
-.mega-item-promo 
-    position: relative
-    margin-top: 10px
+.mega-item-promo
+  position: relative
+  margin-top: 10px
+  width: 255px
+  height: 118px
 
-.mega-item-promo-p 
-    font-size: 22px
-    line-height: 28px
-    font-weight: 900
-    text-transform: uppercase
-    letter-spacing: 0.025em
-    color: #ffffff
+  &:hover
+    box-shadow: 0 0 5px 1px #f16d7f
 
-.div-slider-inner 
-    position: relative
+.mega-item-promo-p
+  font-size: 22px
+  line-height: 28px
+  font-weight: 900
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #ffffff
 
-.container-header-up 
+.div-slider-inner
+  position: relative
+
+.container-header-up
+  display: flex
+  height: 100px
+  background-color: #ffffff
+  border: 1px solid #ececec
+
+.container__like-also
+    justify-content: space-between
+
+.product-like-also
+    margin-top: 73px
+    margin-bottom: 33px
     display: flex
-    height: 100px
-    background-color: #ffffff
-    border: 1px solid #ececec
+    justify-content: space-between
+    flex-wrap: nowrap
+    width: 100%
 
-.ymla-h3
+.section-product__like-also-h3
     font-size: 24px
     line-height: 20px
     font-weight: 900
     text-transform: uppercase
     color: #4d4d4d
-
-.div-ymla-h3
-    margin-top: 113px
     text-align: center
-    width: 100%
+    margin-top: 60px
 
-.container-ymla 
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    align-items: center
+.container-breadcrumb
+  display: flex
+  justify-content: space-between
+  flex-wrap: nowrap
+  align-items: center
+  background-color: #f8f3f4
+  height: 148px
 
-.ymla-item:hover 
-    background-color: white
-    box-shadow: none
+.breadcrumb__h2
+  font-size: 24px
+  line-height: 20px
+  font-weight: 900
+  text-transform: uppercase
+  color: #f16d7f
 
-.ymla-item 
-    margin-bottom: 0
+.breadcrumb
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  list-style: none
+  border-radius: 0.25rem
 
-.container-breadcrumb 
-    height: 148px
-    display: flex
-    justify-content: space-between
-    flex-wrap: nowrap
-    align-items: center
+.breadcrumb-item
+  display: -ms-flexbox
+  display: flex
+  text-decoration: none
 
-.breadcrumb 
-    background-color: #f8f3f4
-
-.breadcrumb-way-s 
-    font-size: 14px
-    line-height: 20px
+.breadcrumb-link
+  font-size: 14px
+  line-height: 20px
+  font-weight: 300
+  text-transform: uppercase
+  color: #636363
+  text-decoration: none
+  &__active
     font-weight: 700
-    text-transform: uppercase
     color: #f16d7f
-
-.breadcrumb-way-p 
-    font-size: 14px
-    line-height: 20px
-    font-weight: 300
     text-transform: uppercase
-    color: #636363
 
-.breadcrumb-div-h3 
-    font-size: 24px
-    line-height: 20px
-    font-weight: 900
-    text-transform: uppercase
-    color: #f16d7f
+.breadcrumb-item + .breadcrumb-item
+  padding-left: 0.5rem
 
-.section_single-slider 
-    height: 777px
-    background-color: #f7f7f7
-    border: 1px solid #eaeaea
+
+.breadcrumb-item + .breadcrumb-item::before
+  display: inline-block
+  padding-right: 0.5rem
+  color: #636363
+  content: "/"
+  font-size: 14px
+  line-height: 20px
+
+.breadcrumb-item + .breadcrumb-item:hover::before
+  text-decoration: underline
+
+.breadcrumb-item + .breadcrumb-item:hover::before
+  text-decoration: none
+
+.breadcrumb-item.active
+  color: #6c757d
+
+.section_single-slider
+  height: 777px
+  background-color: #f7f7f7
+  border: 1px solid #eaeaea
+  margin-bottom: 691px
+
+.container__single-slider
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+
+.single-slider-block
+  width: 47px
+  height: 47px
+  background-color: rgba(42,42,42,0.14)
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  &__left-angle
+    left: -230px
+  &__right-angle
+    right: -230px
+
+.fa-angle-left,
+.fa-angle-right
+  font-size: 24px
+  line-height: 24px
+  font-weight: 400
+  color: #ffffff
+
+.single-slider__img-block
+  width: 597px
+  height: 724px
+
+.single-slider__description
+  width: 1141px
+  height: 730px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  position: absolute
+  top: 704px
+
+.container__single-slider
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+.single-slider__category
+  font-size: 14px
+  line-height: 14px
+  font-weight: 700
+  color: #f16d7f
+  text-align: center
+  margin-top: 73px
+  padding-bottom: 15px
+  border-bottom: 1px solid #eaeaea
+  width: 148px
+  position: relative
+  &:after
+    content: ""
+    width: 63px
+    height: 3px
+    background-color: #ef5b70
+    position: absolute
+    display: block
+    top: 28px
+    left: 43px
+
+.single-slider__name
+  font-size: 18px
+  line-height: 24px
+  font-weight: 900
+  text-transform: uppercase
+  color: #4d4d4d
+  width: 100%
+  text-align: center
+  margin-top: 17px
+
+.single-slider__description-text
+  font-size: 14px
+  line-height: 24px
+  font-weight: 300
+  color: #5e5e5e
+  width: 618px
+  text-align: center
+  margin-top: 67px
+
+.container__single-slider-up
+  width: 642px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  border-bottom: 1px solid #eaeaea
+
+.single-slider__material-designer
+  display: flex
+  justify-content: center
+  flex-wrap: nowrap
+  align-items: center
+  width: 100%
+
+.single-slider__material
+  font-size: 14px
+  line-height: 24px
+  font-weight: 700
+  color: #b9b9b9
+  margin: 22px
+  &-s
+    color: #2f2f2f
+
+.single-slider__designer
+  font-size: 14px
+  line-height: 24px
+  font-weight: 700
+  color: #b9b9b9
+  margin: 22px
+  &-s
+    color: #2f2f2f
+
+.single-slider__price
+  font-size: 24px
+  line-height: 24px
+  font-weight: 700
+  color: #ef5b70
+  margin-top: 15px
+  margin-bottom: 43px
+
+.container__single-slider-down
+  width: 537px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  margin-top: 63px
+
+.single-slider-down__items-box
+  width: 537px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-flow: row nowrap
+
+.single-slider-down__items
+  display: flex
+  flex-flow: column wrap
+  width: 144px
+  margin-bottom: 28px
+
+.single-slider-down__button
+  width: 537px
+  height: 55px
+  background-color: #ffffff
+  border: 1px solid #ef5b70
+
+.single-slider-down__items-label
+  font-size: 14px
+  line-height: 24px
+  font-weight: 700
+  color: #2f2f2f
+  text-transform: uppercase
+  margin-bottom: 16px
+
+.single-slider-down__items-input
+  width: 127px
+  height: 35px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  padding-left: 17px
+
+.single-slider-down__items-button
+  display: flex
+  width: 144px
+  height: 35px
+  padding: 0
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  &-box
+    position: absolute
+    top: 36px
+    display: none
+    justify-content: center
+    flex-flow: column nowrap
+  &-main:active + .single-slider-down__items-button-box
+    display: flex
+  &-box:hover
+    display: flex
+
+.single-slider-down__items-container
+  position: relative
+
+.single-slider-down__items-choice
+  display: flex
+  align-items: center
+  flex-flow: row nowrap
+  width: 144px
+  height: 35px
+
+.items-button__color-name
+  font-size: 13px
+  line-height: 26px
+  font-weight: 400
+  color: #bcbcbc
+  &-box
+    display: flex
+    justify-content: space-between
+    flex-flow: row nowrap
+    width: 100%
+    margin-right: 9px
+    margin-left: 11px
+
+.items-button__color
+  display: block
+  width: 12px
+  height: 12px
+  margin-left: 14px
+  &_red
+    background-color: red
+  &_green
+    background-color: green
+  &_yellow
+    background-color: yellow
+  &_main
+    background-color: #ef5b70
+
+.single-slider-down__items-details
+  display: flex
+  width: 144px
+  height: 35px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+
+
+
+
