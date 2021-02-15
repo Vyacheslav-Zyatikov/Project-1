@@ -116,7 +116,7 @@
     </div>
     <div class="container-header-down">
         <nav>
-            <ul class="main-nav">
+            <ul class="main-nav max-width">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a>
                     <div class="mega-box mega-box__home">
                         <div class="mega-item-box">
@@ -562,159 +562,72 @@
         </div>
     </div>
 </header>
-<section class="section_single-slider">
-    <div class="container__single-slider max-width">
-        <div class="single-slider__img-block">
-            <img src="image/single_page_1.jpg" alt="photo">
-        </div>
-        <div class="single-slider-block single-slider-block__left-angle">
-            <button class="single-slider-block"><i class=" fas fa-angle-left"></i></button>
-        </div>
-        <div class="single-slider-block single-slider-block__right-angle">
-            <button class="single-slider-block"><i class=" fas fa-angle-right"></i></button>
-
-        </div>
-        <div class="single-slider__description">
-            <div class="container__single-slider">
-                <div class="container__single-slider-up">
-                    <h3 class="single-slider__category">WOMEN COLLECTION</h3>
-                    <h2 class="single-slider__name">Moschino Cheap And Chic</h2>
-                    <p class="single-slider__description-text">Compellingly actualize fully researched processes before
-                        proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge
-                        services. Completely visualize
-                        parallel core competencies rather than exceptional portals.</p>
-                    <div class="single-slider__material-designer"><p class="single-slider__material">MATERIAL: <span
-                            class="single-slider__material-s">COTTON</span></p>
-                        <p class="single-slider__designer">DESIGNER: <span
-                                class="single-slider__designer-s">BINBURHAN</span></p></div>
-                    <p class="single-slider__price">$561</p>
-                </div>
-                <form class="container__single-slider-down">
-                    <div class="single-slider-down__items-box">
-                        <div class="single-slider-down__items">
-                            <h3 class="single-slider-down__items-label">CHOOSE COLOR</h3>
-                            <details class="single-slider-down__items-container">
-                                <summary class="single-slider-down__items-button single-slider-down__items-button-main">
-                                        <div class="items-button__color items-button__color_main"></div>
-                                        <div class="items-button__color-name-box"><p class="items-button__color-name">
-                                            Pink</p>
-                                            <p class="items-button__color-name items-button__color-name-i"><i
-                                                    class="fas fa-angle-down"></i></p></div>
-                                </summary>
-                                <div class="single-slider-down__items-button-box">
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color items-button__color_red"></div>
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            Red</h4>
-                                        </div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color items-button__color_green"></div>
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            Green</h4></div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color items-button__color_yellow"></div>
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            Yellow</h4></div>
-                                    </div>
-                                </div>
-                            </details>
-                        </div>
-                        <div class="single-slider-down__items">
-                            <h3 class="single-slider-down__items-label">CHOOSE SIZE</h3>
-                            <details class="single-slider-down__items-container">
-                                <summary class="single-slider-down__items-button single-slider-down__items-button-main">
-                                    <div class="items-button__color-name-box"><p class="items-button__color-name">
-                                        XXL</p>
-                                        <p class="items-button__color-name items-button__color-name-i"><i
-                                                class="fas fa-angle-down"></i></p></div>
-                                </summary>
-                                <div class="single-slider-down__items-button-box">
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            L</h4>
-                                        </div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            M</h4></div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            S</h4></div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            XS</h4></div>
-                                    </div>
-                                </div>
-                            </details>
-                        </div>
-                        <div class="single-slider-down__items">
-                            <h4 class="single-slider-down__items-label">QUANTITY</h4>
-                            <label>
-                                <input class="single-slider-down__items-input" type="text">
-                            </label>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="single-slider-down__button"><img src="image/cart_pink.svg" alt="">Add to
-                            Cart
-                        </button>
-                    </div>
+<section class="section-checkout checkout">
+    <div class="flex flex-col-nowrap center-center max-width">
+        <details  open class="checkout__details-forms flex ">
+            <summary class="checkout__summary-forms">01.&emsp;Shipping Adress</summary>
+            <div class="checkout__content-forms flex space-between">
+                <form class="checkout__form-left">
+                    <h2 class="checkout__h2">Check as a guest or register</h2>
+                    <p class="checkout__p">Register with us for future convenience</p><br>
+                    <label class="checkout__label" >
+                        <input name="register" type="radio" class="checkout__radio">checkout as guest
+                    </label>
+                    <label class="checkout__label">
+                        <input name="register" type="radio" class="checkout__radio">register
+                    </label> <br>
+                    <h2 class="checkout__h2">register and save time!</h2>
+                    <p class="checkout__p">Register with us for future convenience</p> <br>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right checkout__angle"></i>Fast and easy checkout</p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right checkout__angle"></i>Easy access to your
+                        order history and status</p><br>
+                    <button class="checkout__button transition-all">Continue</button>
+                </form>
+                <form action="#" class="checkout__form-right">
+                    <h2 class="checkout__h2">Check as a guest or register</h2>
+                    <p class="checkout__p">Register with us for future convenience</p><br>
+                    <label class="checkout__label">EMAIL ADDRESS <span class="checkout__star-red">*</span><br>
+                        <input type="email" class="checkout__register" required>
+                    </label> <br>
+                    <label class="checkout__label">PASSWORD <span class="checkout__star-red">*</span><br>
+                        <input type="password" class="checkout__register" required>
+                    </label>
+                    <p class="checkout__p-red"><span class="checkout__star-red">*</span> Required Fileds</p>
+                    <button class="checkout__button transition-all">Log in</button>
+                    <a href="checkout.html" class="checkout__forgot">Forgot Password ?</a>
                 </form>
             </div>
-        </div>
-    </div>
-</section>
-<section class="section-product">
-    <div class="container container__like-also max-width">
-        <div class="product-h3-p">
-            <h3 class="section-product__like-also-h3">you may like also</h3>
-        </div>
-        <div class="product-like-also">
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_1.jpg" alt="product_1">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
+        </details>
+        <details  class="checkout__details-forms flex space-between">
+            <summary class="checkout__summary-forms">02.&emsp;BILLING INFORMATION</summary>
+            <div class="checkout__content-forms flex">
+                <h2>information will be added soon</h2>
             </div>
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_2.jpg" alt="product_2">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
+        </details>
+        <details  class="checkout__details-forms flex space-between">
+            <summary class="checkout__summary-forms">03.&emsp;SHIPPING INFORMATION</summary>
+            <div class="checkout__content-forms flex">
+                <h2>information will be added soon</h2>
             </div>
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_3.jpg" alt="product_3">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
+        </details>
+        <details  class="checkout__details-forms flex space-between">
+            <summary class="checkout__summary-forms">04.&emsp;SHIPPING METHOD</summary>
+            <div class="checkout__content-forms flex">
+                <h2>information will be added soon</h2>
             </div>
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_4.jpg" alt="product_4">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
+        </details>
+        <details  class="checkout__details-forms flex space-between">
+            <summary class="checkout__summary-forms">05.&emsp;PAYMENT METHOD</summary>
+            <div class="checkout__content-forms flex">
+                <h2>information will be added soon</h2>
             </div>
-        </div>
+        </details>
+        <details  class="checkout__details-forms flex space-between">
+            <summary class="checkout__summary-forms">06.&emsp;ORDER REVIEW</summary>
+            <div class="checkout__content-forms flex">
+                <h2>information will be added soon</h2>
+            </div>
+        </details>
     </div>
 </section>
 <section class="section-subscrube">

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui/jquery-ui.css">
     <script src="https://kit.fontawesome.com/73c13302ff.js" crossorigin="anonymous"></script>
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/jquery/jquery-ui.js"></script>
     <title>Project 1</title>
 </head>
 <body>
@@ -116,7 +120,7 @@
     </div>
     <div class="container-header-down">
         <nav>
-            <ul class="main-nav">
+            <ul class="main-nav max-width">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a>
                     <div class="mega-box mega-box__home">
                         <div class="mega-item-box">
@@ -562,158 +566,441 @@
         </div>
     </div>
 </header>
-<section class="section_single-slider">
-    <div class="container__single-slider max-width">
-        <div class="single-slider__img-block">
-            <img src="image/single_page_1.jpg" alt="photo">
-        </div>
-        <div class="single-slider-block single-slider-block__left-angle">
-            <button class="single-slider-block"><i class=" fas fa-angle-left"></i></button>
-        </div>
-        <div class="single-slider-block single-slider-block__right-angle">
-            <button class="single-slider-block"><i class=" fas fa-angle-right"></i></button>
-
-        </div>
-        <div class="single-slider__description">
-            <div class="container__single-slider">
-                <div class="container__single-slider-up">
-                    <h3 class="single-slider__category">WOMEN COLLECTION</h3>
-                    <h2 class="single-slider__name">Moschino Cheap And Chic</h2>
-                    <p class="single-slider__description-text">Compellingly actualize fully researched processes before
-                        proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge
-                        services. Completely visualize
-                        parallel core competencies rather than exceptional portals.</p>
-                    <div class="single-slider__material-designer"><p class="single-slider__material">MATERIAL: <span
-                            class="single-slider__material-s">COTTON</span></p>
-                        <p class="single-slider__designer">DESIGNER: <span
-                                class="single-slider__designer-s">BINBURHAN</span></p></div>
-                    <p class="single-slider__price">$561</p>
-                </div>
-                <form class="container__single-slider-down">
-                    <div class="single-slider-down__items-box">
-                        <div class="single-slider-down__items">
-                            <h3 class="single-slider-down__items-label">CHOOSE COLOR</h3>
-                            <details class="single-slider-down__items-container">
-                                <summary class="single-slider-down__items-button single-slider-down__items-button-main">
-                                        <div class="items-button__color items-button__color_main"></div>
-                                        <div class="items-button__color-name-box"><p class="items-button__color-name">
-                                            Pink</p>
-                                            <p class="items-button__color-name items-button__color-name-i"><i
-                                                    class="fas fa-angle-down"></i></p></div>
-                                </summary>
-                                <div class="single-slider-down__items-button-box">
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color items-button__color_red"></div>
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            Red</h4>
-                                        </div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color items-button__color_green"></div>
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            Green</h4></div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color items-button__color_yellow"></div>
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            Yellow</h4></div>
-                                    </div>
-                                </div>
-                            </details>
+<section class="section-main-product">
+    <div class="flex flex-col-nowrap center-center max-width">
+        <div class="grid grid-container main-product__box">
+            <div class="grid grid-container left-sidebar">
+                <details open class="left-sidebar__items">
+                    <summary class="left-sidebar-menu__items-summary">Category</summary>
+                    <div class="left-sidebar-menu__items-box">
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Accessories</a>
                         </div>
-                        <div class="single-slider-down__items">
-                            <h3 class="single-slider-down__items-label">CHOOSE SIZE</h3>
-                            <details class="single-slider-down__items-container">
-                                <summary class="single-slider-down__items-button single-slider-down__items-button-main">
-                                    <div class="items-button__color-name-box"><p class="items-button__color-name">
-                                        XXL</p>
-                                        <p class="items-button__color-name items-button__color-name-i"><i
-                                                class="fas fa-angle-down"></i></p></div>
-                                </summary>
-                                <div class="single-slider-down__items-button-box">
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            L</h4>
-                                        </div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            M</h4></div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            S</h4></div>
-                                    </div>
-                                    <div class="single-slider-down__items-button">
-                                        <div class="items-button__color-name"><h4 class="items-button__color-name">
-                                            XS</h4></div>
-                                    </div>
-                                </div>
-                            </details>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Bags</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Denim</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Hoodies &
+                            Sweatshirts</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Jackets &
+                            Coats</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Pants</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Polos</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shirts</a>
                         </div>
-                        <div class="single-slider-down__items">
-                            <h4 class="single-slider-down__items-label">QUANTITY</h4>
-                            <label>
-                                <input class="single-slider-down__items-input" type="text">
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shoes</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shorts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Sweaters &
+                            Knits</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">T-Shirts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Tanks</a></div>
+                    </div>
+                </details>
+                <details class="left-sidebar__items">
+                    <summary class="left-sidebar-menu__items-summary">BRAND</summary>
+                    <div class="left-sidebar-menu__items-box">
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Accessories</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Bags</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Denim</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Hoodies &
+                            Sweatshirts</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Jackets &
+                            Coats</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Pants</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Polos</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shirts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shoes</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shorts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Sweaters &
+                            Knits</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">T-Shirts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Tanks</a></div>
+                    </div>
+                </details>
+                <details class="left-sidebar__items">
+                    <summary class="left-sidebar-menu__items-summary">DESIGNER</summary>
+                    <div class="left-sidebar-menu__items-box">
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Accessories</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Bags</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Denim</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Hoodies &
+                            Sweatshirts</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Jackets &
+                            Coats</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Pants</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Polos</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shirts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shoes</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Shorts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Sweaters &
+                            Knits</a></div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">T-Shirts</a>
+                        </div>
+                        <div class="left-sidebar-menu__items"><a class="left-sidebar-menu__link" href="">Tanks</a></div>
+                    </div>
+                </details>
+            </div>
+            <div class="grid grid-container content">
+                <div class="grid content-settings">
+                    <div class="grid content-settings__up">
+                        <div class="grid content-settings__trend">
+                            <h3 class="main-product__h3 main-product__h3-trend">Trending now</h3>
+                            <label class="checkbox-btn">
+                                <input type="checkbox">
+                                <span>Bohemian</span>
+                            </label>
+                            <label class="checkbox-btn">
+                                <input type="checkbox">
+                                <span>Floral</span>
+                            </label>
+                            <label class="checkbox-btn">
+                                <input type="checkbox">
+                                <span>Lace</span>
+                            </label>
+                            <label class="checkbox-btn">
+                                <input type="checkbox">
+                                <span>Floral</span>
+                            </label>
+                            <label class="checkbox-btn">
+                                <input type="checkbox">
+                                <span>Lace</span>
+                            </label>
+                            <label class="checkbox-btn">
+                                <input type="checkbox">
+                                <span>Bohemian</span>
+                            </label>
+                        </div>
+                        <div class="grid content-settings__size">
+                            <h3 class="main-product__h3 main-product__h3-size">Size</h3>
+                            <input name="size" id="size-XXS" type="checkbox"><label for="size-XXS">XXS</label>
+                            <input name="size" id="size-XS" type="checkbox"><label for="size-XS">XS</label>
+                            <input name="size" id="size-S" type="checkbox"><label for="size-S">S</label>
+                            <input name="size" id="size-M" type="checkbox"><label for="size-M">M</label>
+                            <input name="size" id="size-L" type="checkbox"><label for="size-L">L</label>
+                            <input name="size" id="size-XL" type="checkbox"><label for="size-XL">XL</label>
+                            <input name="size" id="size-XXL" type="checkbox"><label for="size-XXL">XXL</label>
+                        </div>
+                        <div class="grid content-settings__price">
+                            <h3 class="main-product__h3 main-product__h3-price">PRICE</h3>
+                            <div class="polzunok-5 main-product__range-price transition-all"></div>
+                            <label class="main-product__range-price-label-left">
+                                <input type="text" class="polzunok-input-5-left"/>
+                            </label>
+                            <label class="main-product__range-price-label-right">
+                                <input type="text" class="polzunok-input-5-right"/>
                             </label>
                         </div>
                     </div>
-                    <div>
-                        <button class="single-slider-down__button"><img src="image/cart_pink.svg" alt="">Add to
-                            Cart
-                        </button>
+                    <div class="grid content-settings__sort">
+                        <div class="grid content-settings__sort-box">
+                            <div class="grid grid-container sort-h3-box"><h3 class="sort-h3">Sort By</h3></div>
+                            <div class="grid sort-details-box">
+                                <details class="grid grid-container sort-details">
+                                    <summary class="grid sort-details-summary">
+                                        <div class="grid sort-details-summary__items"><p class="sort-details-summary__items-p">
+                                            Name</p>
+                                            <p class="items-button__color-name items-button__color-name-i sort-details-summary__items-angle"><i
+                                                    class="fas fa-caret-down"></i></p>
+                                        </div>
+                                    </summary>
+                                    <div class="grid sort-details-box-in">
+                                        <div class="grid grid-container">
+                                            <div class=""><h4 class="">L</h4>
+                                        </div>
+                                        <div class="grid grid-container">
+                                            <div class=""><h4 class="">M</h4></div>
+                                        </div>
+                                        <div class="grid grid-container">
+                                            <div class=""><h4 class="">S</h4></div>
+                                        </div>
+                                        <div class="grid grid-container">
+                                            <div class=""><h4 class="">XS</h4></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="grid content-settings__show-box">
+                            <div class="grid grid-container sort-h3-box"><h3 class="sort-h3">Show</h3></div>
+                            <div class="grid sort-details-box">
+                                <details class="grid grid-container sort-details">
+                                    <summary class="grid sort-details-summary">
+                                        <div class="grid sort-details-summary__items"><p class="sort-details-summary__items-p">
+                                            09</p>
+                                            <p class="items-button__color-name items-button__color-name-i sort-details-summary__items-angle"><i
+                                                    class="fas fa-caret-down"></i></p>
+                                        </div>
+                                    </summary>
+                                    <div class="grid sort-details-box-in">
+                                        <div class="grid grid-container">
+                                            <div class="grid grid-container"><h4 class="">08</h4></div>
+                                            <div class="grid grid-container">
+                                                <div class=""><h4 class="">07</h4></div>
+                                            </div>
+                                            <div class="grid grid-container">
+                                                <div class=""><h4 class="">06</h4></div>
+                                            </div>
+                                            <div class="grid grid-container">
+                                                <div class=""><h4 class="">05</h4></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                </div>
+                <div class="grid grid-container main-product">
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_1.jpg"
+                                                                     alt="product_1">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_2.jpg"
+                                                                     alt="product_2">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_3.jpg"
+                                                                     alt="product_3">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_4.jpg"
+                                                                     alt="product_4">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_5.jpg"
+                                                                     alt="product_5">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_6.jpg"
+                                                                     alt="product_6">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_7.jpg"
+                                                                     alt="product_7">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_8.jpg"
+                                                                     alt="product_8">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item main-product__item transition-all">
+                        <div class="add-box transition-all">
+                            <a class="add" href="#">
+                                <img class="add-img" src="image/cart.svg" alt="cart">
+                                <p class="add-p">Add to Cart</p>
+                            </a>
+                        </div>
+                        <a class="product-link" href="single-page.html">
+                            <div class="img-box transition-all"><img class="prod-img"
+                                                                     src="image/main-product/main_product_9.jpg"
+                                                                     alt="product_9">
+                            </div>
+                            <div class="text-box">
+                                <p class="prod-desc">Mango People T-shirt</p>
+                                <p class="prod-price">$52.00</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid pagination">
+                    <div class="grid pagination-box">
+                        <nav>
+                            <ul class="grid pagination-menu">
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#"><i class="fas fa-angle-left"></i></a>
+                                </li>
+                                <li class="pagination-item pagination-item-active">
+                                    <a class="pagination-item__link" href="#">1</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">2</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">3</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">4</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">5</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">6</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">7</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">....</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#">20</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-item__link" href="#"><i class="fas fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <button class="pagination-button transition-all">View All</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section class="section-product">
-    <div class="container container__like-also max-width">
-        <div class="product-h3-p">
-            <h3 class="section-product__like-also-h3">you may like also</h3>
-        </div>
-        <div class="product-like-also">
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_1.jpg" alt="product_1">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_2.jpg" alt="product_2">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_3.jpg" alt="product_3">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
-            </div>
-            <div class="product-item transition-all">
-                <a class="product-link product-link__like-also" href="single-page.html">
-                    <div class="img-box transition-all"><img class="prod-img" src="image/ymla_4.jpg" alt="product_4">
-                    </div>
-                    <div class="text-box">
-                        <p class="prod-desc">Mango People T-shirt</p>
-                        <p class="prod-price">$52.00</p>
-                    </div>
-                </a>
-            </div>
+<section class="section-feature section-feature-product">
+    <div class="container container-feature-product max-width">
+        <div class="article-box center-center article-box-product">
+            <article class="article-box-items article-box-items-product flex-col-nowrap">
+                <div class="article-items-img"><img class="article-box-items-img" src="image/forma_1_1.svg" alt="">
+                </div>
+                <div class="article-box-items-product-text flex-col-nowrap">
+                    <h3 class="article-box-items-h3 article-box-items-product-h3">Free Delivery</h3>
+                    <p class="article-box-items-product-p">Worldwide delivery on all. Authorit tively morph
+                        next-generation innov tion with extensive models.</p>
+                </div>
+            </article>
+            <article class="article-box-items article-box-items-product flex-col-nowrap">
+                <div class="article-items-img"><img class="article-box-items-img" src="image/forma_1_2.svg" alt="">
+                </div>
+                <div class="article-box-items-product-text flex-col-nowrap">
+                    <h3 class="article-box-items-h3">Sales &amp;&nbsp;discounts</h3>
+                    <p class="article-box-items-product-p">Worldwide delivery on all. Authorit tively morph
+                        next-generation
+                        innov tion with extensive models.</p>
+                </div>
+            </article>
+            <article class="article-box-items article-box-items-product flex-col-nowrap">
+                <div class="article-items-img"><img class="article-box-items-img" src="image/forma_1_3.svg" alt="">
+                </div>
+                <div class="article-box-items-product-text flex-col-nowrap">
+                    <h3 class="article-box-items-h3">Quality assurance</h3>
+                    <p class="article-box-items-product-p">Worldwide delivery on all. Authorit tively morph
+                        next-generation
+                        innov tion with extensive models.</p>
+                </div>
+            </article>
         </div>
     </div>
 </section>
@@ -834,5 +1121,55 @@
         </div>
     </div>
 </footer>
+<script>
+    "use strict";
+    $(".polzunok-5").slider({
+        min: 0,
+        max: 700,
+        values: [52, 400],
+        range: true,
+        animate: "fast",
+        slide : function(event, ui) {
+            $(".polzunok-input-5-left").val( "$" + ui.values[ 0 ]);
+            $(".polzunok-input-5-right").val( "$" + ui.values[ 1 ]);
+        }
+    });
+    $(".polzunok-input-5-left").val( "$" + $(".polzunok-5").slider("values", 0));
+    $(".polzunok-input-5-right").val( "$" + $(".polzunok-5").slider("values", 1));
+    $(".polzunok-container-5 input").change(function() {
+        let input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),
+            opt_left = $(".polzunok-5").slider("option", "min"),
+            where_right = $(".polzunok-5").slider("values", 1),
+            input_right = $(".polzunok-input-5-right").val().replace(/[^0-9]/g, ''),
+            opt_right = $(".polzunok-5").slider("option", "max"),
+            where_left = $(".polzunok-5").slider("values", 0);
+        if (input_left > where_right) {
+            input_left = where_right;
+        }
+        if (input_left < opt_left) {
+            input_left = opt_left;
+        }
+        if (input_left === "") {
+            input_left = 0;
+        }
+        if (input_right < where_left) {
+            input_right = where_left;
+        }
+        if (input_right > opt_right) {
+            input_right = opt_right;
+        }
+        if (input_right === "") {
+            input_right = 0;
+        }
+        $(".polzunok-input-5-left").val(input_left);
+        $(".polzunok-input-5-right").val(input_right);
+        if (input_left !== where_left) {
+            $(".polzunok-5").slider("values", 0, input_left);
+        }
+        if (input_right !== where_right) {
+            $(".polzunok-5").slider("values", 1, input_right);
+        }
+    });
+</script>
 </body>
 </html>
